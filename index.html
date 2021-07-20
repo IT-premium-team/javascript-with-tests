@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.8.0/jasmine.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.8.0/jasmine.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.8.0/jasmine-html.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.8.0/boot.min.js"></script>
+    <script src="script.js" async></script>
+    <script src="sript.spec.js" async></script>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+            position: relative;
+            width: 100%;
+        }
+
+        .list {
+            position: absolute;
+            display: none;
+            flex-direction: column;
+            right: 10px;
+            top: 50px;;
+            height: auto;
+            margin: 0;
+            padding-inline-start: 0;
+        }
+
+        .show-more {
+            cursor: pointer;
+        }
+
+        ul {
+            display: flex;
+            padding-inline-start: 0;
+        }
+
+        ul li {
+            list-style-type: none;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <ul id="navbar"></ul>
+        <ul class="list"></ul>
+    </div>
+</body>
+</html>
